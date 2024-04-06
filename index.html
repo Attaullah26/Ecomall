@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomall - Elementor WooCommerce Wordpress Theme</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- Jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- waypoints cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    <!-- animate.css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <!-- owlcarousel stylesheed cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+
+        <!-- upper navbar starts -->
+
+        <div class="upper-nav-main">
+            <div class="upper-nav">
+                <div class="left-side">
+                    <div class="lang-wrap">
+                        <div class="language">Emglish <i class="fa-solid fa-angle-down"></i>
+                            <ul class="lang-list">
+                                <li>Francais</li>
+                                <li>Deutsch</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="currency-wrap">
+                        <div class="currency">USD <i class="fa-solid fa-angle-down"></i>
+                            <ul class="currency-list">
+                                <li>USD</li>
+                                <li>EUR</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <P>Free Shipping On All Orders Over $100</P>
+                </div>
+
+                <!-- riht side starts -->
+
+                <div class="right-side">
+                    <div class="flash-sale"><i class="fa-solid fa-bolt"></i> <a href="">Flash sale</a></div>
+                    <ul class="nav-menu">
+                        <li><a href="">Track order</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Navbar Starts -->
+
+        <div class="navbar-wrap">
+            <div class="logo-section">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="images/logo/logo.png" alt="">
+                </div>
+                <!-- Search -->
+                <div class="search">
+                    <input type="search" name="search" id="search" placeholder="Search for products">
+                    <input type="button" value="SEARCH" class="search-btn">
+                    <div class="search-logo"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <select class="categories">
+                        <option value="">All Categories </option>
+                        <option value="camera">Camera</option>
+                        <option value="camera-accessories">&nbsp;&nbsp;&nbsp;Accessories</option>
+                        <option value="camera-lenses">&nbsp;&nbsp;&nbsp;Camera &amp; Lenses</option>
+                        <option value="drones">&nbsp;&nbsp;&nbsp;Drones</option>
+                        <option value="security-cameras">&nbsp;&nbsp;&nbsp;Security Cameras</option>
+                        <option value="games">Games</option>
+                        <option value="game-accessories">&nbsp;&nbsp;&nbsp;Accessories</option>
+                        <option value="playstation-4">&nbsp;&nbsp;&nbsp;Playstation 4</option>
+                        <option value="playstation-5">&nbsp;&nbsp;&nbsp;Playstation 5</option>
+                        <option value="xbox-series">&nbsp;&nbsp;&nbsp;Xbox Series</option>
+                        <option value="headphones">Headphones</option>
+                        <option value="airpods">&nbsp;&nbsp;&nbsp;AirPods</option>
+                        <option value="gaming-headsets">&nbsp;&nbsp;&nbsp;Gaming Headsets</option>
+                        <option value="kids-headphones">&nbsp;&nbsp;&nbsp;Kids' Headphones</option>
+                        <option value="wireless-earbuds">&nbsp;&nbsp;&nbsp;Wireless Earbuds</option>
+                        <option value="iwatch">Iwatch</option>
+                        <option value="laptops-desktops">Laptops &amp; Desktops</option>
+                        <option value="laptop-accessories">&nbsp;&nbsp;&nbsp;Accessories</option>
+                        <option value="laptops">&nbsp;&nbsp;&nbsp;Laptops</option>
+                        <option value="monitors">&nbsp;&nbsp;&nbsp;Monitors</option>
+                        <option value="smart-home">Smart Home</option>
+                        <option value="smartphone">Smartphone</option>
+                        <option value="iphone">&nbsp;&nbsp;&nbsp;iPhone</option>
+                        <option value="prepaid-phones">&nbsp;&nbsp;&nbsp;Prepaid Phones</option>
+                        <option value="samsung-galaxy">&nbsp;&nbsp;&nbsp;Samsung Galaxy</option>
+                        <option value="unlocked-phones">&nbsp;&nbsp;&nbsp;Unlocked Phones</option>
+                        <option value="speakers">Speakers</option>
+                        <option value="bluetooth-speakers">&nbsp;&nbsp;&nbsp;Bluetooth Speakers</option>
+                        <option value="portable-speakers">&nbsp;&nbsp;&nbsp;Portable Speakers</option>
+                        <option value="professional-speakers">&nbsp;&nbsp;&nbsp;Professional Speakers</option>
+                        <option value="waterproof-speakers">&nbsp;&nbsp;&nbsp;Waterproof Speakers</option>
+                        <option value="tablets">Tablets</option>
+                        <option value="television">Television</option>
+                        <option value="55-tvs">&nbsp;&nbsp;&nbsp;55" TVs</option>
+                        <option value="65-tvs">&nbsp;&nbsp;&nbsp;65" TVs</option>
+                        <option value="oled-tvs">&nbsp;&nbsp;&nbsp;OLED TVs</option>
+                        <option value="qled-tvs">&nbsp;&nbsp;&nbsp;QLED TVs</option>
+                    </select>
+                </div>
+                <!-- Login side -->
+                <div class="login-side">
+                    <div class="search-logo-simple"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="help">
+                        <div class="icon">
+                            <i class="fa-solid fa-headphones-simple"></i>
+                        </div>
+                        <div class="contact">
+                            <p>Need help?</p>
+                            <span><a href="" style="color: #0068C8;">+08 9229 8228</a></span>
+                        </div>
+                    </div>
+
+                    <div class="login">
+                        <div class="icon">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="account">
+                            <p>My account</p>
+                            <span><a href="">Login</a></span>
+                        </div>
+                    </div>
+
+                    <div class="cart">
+                        <div class="icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="my-cart">
+                            <p>My cart</p>
+                            <span><a href="">$0.00</a></span>
+                        </div>
+                    </div>
+                    <div class="mobile-menu"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Navbar Menu -->
+
+        <div class="menu-section">
+            <div class="shop-categories">
+                <i class="fa-solid fa-bars"></i>
+                <span>Shop categories</span>
+                <i class="fa-solid fa-angle-down"></i>
+                <ul class="cat-dropdown">
+                    <li class="smartphone"><a class="item1" href="">&nbsp;<i class="fa-solid fa-mobile"></i>
+                            Smartphone</a>
+                        <i class="fa-solid fa-angle-right"></i>
+
+                        <!-- Smartphones dropdown -->
+                        <div class="smartphone-dropdown">
+                            <div class="first">
+                                <div class="computer">
+                                    <h3><a href="">Computers & Tablets</a></h3>
+                                    <ul>
+                                        <li class="item"><a href="">Laptops & Desktops</a></li>
+                                        <li class="item"><a href="">Tablets</a></li>
+                                        <li class="item"><a href="">Monitors</a></li>
+                                        <li class="item"><a href="">Laptops</a></li>
+                                        <li class="item"><a href="">Accessories</a></li>
+                                        <li class="item"><a href="">Drones</a></li>
+                                    </ul>
+                                </div>
+                                <div class="camera">
+                                    <h3><a href="">Camera</a></h3>
+                                    <ul>
+                                        <li class="item"><a href="">Cameras</a></li>
+                                        <li class="item"><a href="">Accessories</a></li>
+                                        <li class="item"><a href="">Lenses</a></li>
+                                        <li class="item"><a href="">Drones</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="second">
+                                <div class="cellphone">
+                                    <h3><a href="">Cell Phones</a></h3>
+                                    <ul>
+                                        <li class="item"><a href="">Smartphones</a></li>
+                                        <li class="item"><a href="">AT&T</a></li>
+                                        <li class="item"><a href="">Iphone</a></li>
+                                        <li class="item"><a href="">Prepaid PHones</a></li>
+                                        <li class="item"><a href="">Sumsang Galaxy</a></li>
+                                        <li class="item"><a href="">Unlocked Phones</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tv">
+                                    <h3><a href="">TV & Home Theaters</a></h3>
+                                    <ul>
+                                        <li class="item"><a href="">Televisions</a></li>
+                                        <li class="item"><a href="">55 TVs</a></li>
+                                        <li class="item"><a href="">65 TVs</a></li>
+                                        <li class="item"><a href="">OLED TVs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sale-poster">
+                                <a class="sale-wrap">
+                                    <span>TOP BRANDS</span>
+                                    <h1>Sale Off 30% <br> Flycam</h1>
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="laptop"><a href="" class="item1"><i class="fa-solid fa-laptop"></i> Laptops</a> <i
+                            class="fa-solid fa-angle-right"></i>
+                        <!-- laptops dropdown -->
+                        <div class="laptop-dropdown">
+                            <ul>
+                                <li class="item"><a href="">Laptops & Desktops</a></li>
+                                <li class="item"><a href="">Accessories</a></li>
+                                <li class="item"><a href="">Chromebook</a></li>
+                                <li class="item"><a href="">Computer Component</a></li>
+                                <li class="item"><a href="">Desktops</a></li>
+                                <li class="item"><a href="">iMac</a></li>
+                                <li class="item"><a href="">Laptops</a></li>
+                                <li class="item"><a href="">Macbook</a></li>
+                                <li class="item"><a href="">Monitors</a></li>
+                                <li class="item"><a href="">PC Gaming</a></li>
+                                <li class="item"><a href="">Printers & Ink</a></li>
+                                <li class="item"><a href="">Resored Computers</a></li>
+                                <li class="item"><a href="">Windows Computers</a></li>
+                            </ul>
+                        </div>
+                    <li><a href="" class="item1"><i class="fa-solid fa-camera"></i> Camera</a></li>
+                    <li><a href="" class="item1"><i class="fa-solid fa-headphones"></i> Headphones</a></li>
+                    <li><a href="" class="item1"><i class="fa-solid fa-gamepad"></i> PC Gaming</a></li>
+                    <li><a href="" class="item1"><i class="fa-solid fa-tablet"></i> Tablets</a></li>
+                    <li><a href="" class="item1"><i class="fa-solid fa-television"></i> Television</a></li>
+                    <li><a href="" class="item1"><i class="fa-solid fa-headphones-simple"></i> Speakers</a></li>
+                    <li><a href="" class="item1"><i class="fa-solid fa-laptop-medical"></i>Kid electronics</a></li>
+                    <li><a href="" class="item1"><i class="fa-solid fa-gift"></i>Tech gift</a></li>
+                </ul>
+                </li>
+            </div>
+            <ul class="navbar-menu">
+                <li class="active home item" style="padding: 12px 0;">Home <i class="fa-solid fa-angle-down"></i>
+
+                    <!-- Home dropdown -->
+                    <div class="home-dropdown">
+                        <div class="dropdown-wrap">
+                            <div class="homepage">
+                                <a href="" class="home-heading">
+                                    <h3>Homepage</h3>
+                                </a>
+                                <ul>
+                                    <li><a href="">Home 01</a></li>
+                                    <li><a href="">Home 02</a></li>
+                                    <li><a href="">Home 03</a></li>
+                                    <li><a href="">Home 04</a></li>
+                                    <li><a href="">Home 05</a></li>
+                                    <li><a href="">Home 06</a></li>
+                                </ul>
+                            </div>
+                            <div class="shop-layout">
+                                <a href="" class="home-heading">
+                                    <h3>Shop Layout</h3>
+                                </a>
+                                <ul>
+                                    <li><a href="">Shop To Categories</a></li>
+                                    <li><a href="">Shop To Brands</a></li>
+                                    <li><a href="">Shop List</a></li>
+                                    <li><a href="">Shop Scroll Sidebar</a></li>
+                                    <li><a href="">Shop Top Filters</a></li>
+                                    <li><a href="">Shop Load More Buttons</a></li>
+                                    <li><a href="">Shop Infinity Scroll</a></li>
+                                    <li><a href="">Shop Ajax Pagination</a></li>
+                                    <li><a href="">Shop </a></li>
+                                </ul>
+                            </div>
+                            <div class="product-layout">
+                                <a href="" class="home-heading">
+                                    <h3>Product Layout</h3>
+                                </a>
+                                <ul>
+                                    <li><a href="">Horizontal Thumbnails</a></li>
+                                    <li><a href="">Vertical Thumbnails</a></li>
+                                    <li><a href="">Grid Thumbnails</a></li>
+                                    <li><a href="">Variation Thumbnails</a></li>
+                                    <li><a href="">Variation Dropdown</a></li>
+                                    <li><a href="">Product Deal</a></li>
+                                    <li><a href="">Group Products</a></li>
+                                    <li><a href="">Products Video</a></li>
+                                </ul>
+                            </div>
+                            <div class="others">
+                                <a href="" class="home-heading">
+                                    <h3>Others</h3>
+                                </a>
+                                <ul>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Blog Details</a></li>
+                                    <li><a href="">Track Order</a></li>
+                                    <li><a href="">Flash Sale</a></li>
+                                    <li><a href="">Comming Soon</a></li>
+                                    <li><a href="">404</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item laptop-two" style="padding: 12px 0;">Laptops <i class="fa-solid fa-angle-down"></i>
+
+                    <!-- laptop dropdown two -->
+                    <div class="laptop-dropdown-wrap">
+                        <div class="laptop-dropdown-main">
+                            <div class="first">
+                                <!-- up -->
+                                <div class="computer-tablet">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Computers & Tablets</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Laptops & Desktops</a></li>
+                                        <li><a href="">TAblets</a></li>
+                                        <li><a href="">Monitors</a></li>
+                                        <li><a href="">Laptops</a></li>
+                                        <li><a href="">Accessories</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="cam">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Camera</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Camera</a></li>
+                                        <li><a href="">Accessories</a></li>
+                                        <li><a href="">Camera & Lenses</a></li>
+                                        <li><a href="">Drones</a></li>
+                                        <li><a href="">Security Cameras</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="second">
+                                <div class="cell">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Cellphone</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Smartphones</a></li>
+                                        <li><a href="">AT&T</a></li>
+                                        <li><a href="">iPhons</a></li>
+                                        <li><a href="">Prepaid Phones</a></li>
+                                        <li><a href="">Samsung Galaxy</a></li>
+                                        <li><a href="">Unlocked Phones</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="tv2">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>TV & Home Theaters</h3>
+                                    </a>
+                                    <ul>
+                                        <li class="item"><a href="">Televisions</a></li>
+                                        <li class="item"><a href="">55 TVs</a></li>
+                                        <li class="item"><a href="">65 TVs</a></li>
+                                        <li class="item"><a href="">OLED TVs</a></li>
+                                        <li class="item"><a href="">QLED TVs</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="third">
+                                <div class="audio">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Audio</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Bluetooth Speakers</a></li>
+                                        <li><a href="">Portable Speakers</a></li>
+                                        <li><a href="">Proffessional Speakers</a></li>
+                                        <li><a href="">Waterproof Speakers</a></li>
+                                        <li><a href="">Headphones</a></li>
+                                        <li><a href="">Speakers</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="smart-home">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Smart Home</h3>
+                                    </a>
+                                    <ul>
+                                        <li class="item"><a href="">Smart Home</a></li>
+                                        <li class="item"><a href="">Security Cameras</a></li>
+                                        <li class="item"><a href="">Television</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="fourth">
+                                <div class="video-gaames">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Video Games</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Xbox Serids</a></li>
+                                        <li><a href="">Playstation 4</a></li>
+                                        <li><a href="">Playstation 5</a></li>
+                                        <li><a href="">Gaming Headsets</a></li>
+                                        <li><a href="">Accessories</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="headphones">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Headphones</h3>
+                                    </a>
+                                    <ul>
+                                        <li class="item"><a href="">Headphones</a></li>
+                                        <li class="item"><a href="">Airpods</a></li>
+                                        <li class="item"><a href="">Gaming Headsets</a></li>
+                                        <li class="item"><a href="">Kid's Heaphones</a></li>
+                                        <li class="item"><a href="">Wireless Earbuds</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- SMARTPHONE DROPDOWN -->
+                <li class="item smartphone-two" style="padding: 12px 0;">Smartphones <i
+                        class="fa-solid fa-angle-down"></i>
+                    <div class="smartphone-dropdown-wrap">
+                        <div class="smartphone-dropdown">
+                            <div class="left-side">
+                                <div class="computer-tablet">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Computers & Tablets</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Laptops & Desktops</a></li>
+                                        <li><a href="">TAblets</a></li>
+                                        <li><a href="">Monitors</a></li>
+                                        <li><a href="">Laptops</a></li>
+                                        <li><a href="">Accessories</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="cell">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Cellphone</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Smartphones</a></li>
+                                        <li><a href="">AT&T</a></li>
+                                        <li><a href="">iPhons</a></li>
+                                        <li><a href="">Prepaid Phones</a></li>
+                                        <li><a href="">Samsung Galaxy</a></li>
+                                        <li><a href="">Unlocked Phones</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a class="right-side">
+                                <div class="apple">
+                                    <h1>Apple Watch <br> Deal This <br> Week</h1>
+                                    <span>UP TO $70 OFF</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- HEADPHONES DROPDOWN -->
+                <li class="item headphone-main" style="padding: 12px 0;">Headphones <i
+                        class="fa-solid fa-angle-down"></i>
+                    <div class="headphone-dropdown">
+                        <div class="headphone-dropdown-wrap">
+                            <div class="up">
+                                <div class="computer-tablet">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Computers & Tablets</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Laptops & Desktops</a></li>
+                                        <li><a href="">TAblets</a></li>
+                                        <li><a href="">Monitors</a></li>
+                                        <li><a href="">Laptops</a></li>
+                                        <li><a href="">Accessories</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="cell">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Cellphone</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Smartphones</a></li>
+                                        <li><a href="">AT&T</a></li>
+                                        <li><a href="">iPhons</a></li>
+                                        <li><a href="">Prepaid Phones</a></li>
+                                        <li><a href="">Samsung Galaxy</a></li>
+                                        <li><a href="">Unlocked Phones</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="audio">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Audio</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Bluetooth Speakers</a></li>
+                                        <li><a href="">Portable Speakers</a></li>
+                                        <li><a href="">Proffessional Speakers</a></li>
+                                        <li><a href="">Waterproof Speakers</a></li>
+                                        <li><a href="">Headphones</a></li>
+                                        <li><a href="">Speakers</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="video-gaames">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Video Games</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Xbox Serids</a></li>
+                                        <li><a href="">Playstation 4</a></li>
+                                        <li><a href="">Playstation 5</a></li>
+                                        <li><a href="">Gaming Headsets</a></li>
+                                        <li><a href="">Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="down">
+                                <a class="computer-product box">
+                                    <h1>Computers</h1>
+                                    <span>36 Products</span>
+                                </a>
+                                <a class="cell-product box">
+                                    <h1>Cell Phone</h1>
+                                    <span>17 Products</span>
+                                </a>
+                                <a class="audio-product box">
+                                    <h1>Audio</h1>
+                                    <span>15 Products</span>
+                                </a>
+                                <a class="video-product box">
+                                    <h1>Video Games</h1>
+                                    <span>20 Products</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item" style="padding: 12px 0;">Camera </li>
+            </ul>
+            <div class="deal">
+                <i class="fa-regular fa-heart"></i>
+                <span>Today's deal</span>
+            </div>
+        </div>
+
+
+        <!-- Slider / Banner starts -->
+        <div class="slider-main-wrap">
+            <ul class="category-slider owl-carousel owl-theme">
+                <li class="laptop slide">
+                    <div class="icon"><img src="/images/icons/icon-laptops.png" alt=""></div>
+                    <span>Laptops</span>
+                </li>
+                <li class="game slide">
+                    <div class="icon"><img src="/images/icons/icon-games (1).png" alt=""></div>
+                    <span>Games</span>
+                </li>
+                <li class="television slide">
+                    <div class="icon"><img src="/images/icons/icon-television.png" alt=""></div>
+                    <span>Television</span>
+                </li>
+                <li class="speaker slide">
+                    <div class="icon"><img src="/images/icons/icon-speaker.png" alt=""></div>
+                    <span>Speakers</span>
+                </li>
+                <li class="headphone slide">
+                    <div class="icon"><img src="/images/icons/icon-headphone.png" alt=""></div>
+                    <span>Headphones</span>
+                </li>
+                <li class="smartphone slide">
+                    <div class="icon"><img src="/images/icons/icon-phone.png" alt=""></div>
+                    <span>Smartphones</span>
+                </li>
+                <li class="laptop slide">
+                    <div class="icon"><img src="/images/icons/icon-laptops.png" alt=""></div>
+                    <span>Laptops</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Slider Banner -->
+        <div class="banner-main-wrap">
+            <div class="banner-wrap owl-carousel owl-theme">
+                <a href="" class="slide-1 ">
+                    <div class="content-box">
+                        <div class="label">TODAY DEAL</div>
+                        <div class="heading">Best iPad Deals <br> At a Glance</div>
+                        <div class="desc-box">
+                            <div class="desc">FREE SHIPPING BY ECOMALL <br> FROM</div><span class="price">$499.99</span>
+                        </div>
+                        <input type="button" value="SHOP NOW">
+                    </div>
+                    <div class="image">
+                        <img src="/images/banners/slide1-ipad.png" alt="">
+                    </div>
+                </a>
+                <a href="" class="slide-2 ">
+                    <div class="content-box">
+                        <div class="label">BIG SALE</div>
+                        <div class="heading">iPhone On Sale At<br> Upto 25% Off</div>
+                        <div class="desc-box">
+                            <div class="desc">BUY TOP PRODUCTS ON ECOMALL <br> FROM</div><span
+                                class="price">$399.99</span>
+                        </div>
+                        <input type="button" value="SHOP NOW">
+                    </div>
+                    <div class="image">
+                        <img src="/images/banners/slide1-iphone.png" alt="">
+                    </div>
+                </a>
+                <a href="" class="slide-3 ">
+                    <div class="content-box" id="content">
+                        <div class="label">WEEKEND DEAL</div>
+                        <div class="heading">All New<br> For A Better You</div>
+                        <div class="desc-box">
+                            <div class="desc">Amazing Discounts & Deals <br> FROM</div><span
+                                class="price">$399.99</span>
+                        </div>
+                        <input type="button" value="SHOP NOW">
+                    </div>
+                    <div class="image">
+                        <img src="/images/banners/slide1-watches.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Deal slider -->
+        <div class="deal-slider-main">
+            <div class="deal-box">
+                <span>ONLY FOR TODAY</span>
+                <h3>Deal Of The Day</h3>
+                <p>Deal of the Day for deals on consumer electronics. Watch for many other great daily offers.</p>
+                <div class="counter-wraper">
+                    <div class="days" hidden>
+                        <div class="number">
+                            <span class="day-ref">16</span>
+                        </div>
+                        <div class="day">Days </div>
+                    </div>
+                    <div class=" box">
+                        <div class="number">
+                            <span class="hour-ref">16</span>
+                        </div>
+                        <div class="name">Hours </div>
+                    </div>
+                    <div class=" box">
+                        <div class="number">
+                            <span class="min-ref">14</span>
+                        </div>
+                        <div class="name">Mins </div>
+                    </div>
+                    <div class=" box">
+                        <div class="number">
+                            <span class="sec-ref">27</span>
+                        </div>
+                        <div class="name">Secs </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-wrap owl-carousel owl-theme" style="width: 800px;">
+                <div class="slider slider-1">
+                    <div class="images-wrap">
+                        <div class="gallery">
+                            <div class="img1 img"><img src="images/products-2/g1.jpg" alt="" style="opacity: 1;"></div>
+                            <div class="img2 img"><img src="images/products-2/g2.jpg" alt=""></div>
+                            <div class="img3 img"><img src="images/products-2/g3.jpg" alt=""></div>
+                        </div>
+                        <div class="main-img"><img src="images/products-2/g1.jpg" alt=""></div>
+                    </div>
+                    <div class="content-box">
+                        <div class="tag">-5%</div>
+                        <div class="bluetooth"><a href="">Bluetooth Speakers</a></div>
+                        <p class="headig"><a href="">Portable Bluetooth Speakers With Voice <br> Assistant, 10 Hours
+                                Battery Life</a></p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="price">
+                            $65.55 <span class="past">$69.00</span>
+                        </div>
+                        <p class="details">Bluetooth with voice confirmation, 10 hour llighting time, built-in
+                            microphone
+                        </p>
+                        <div class="cart-btn">ADD TO CART</div>
+                    </div>
+                </div>
+                <!-- slider 2 -->
+                <div class="slider-2">
+                    <div class="images-wrap">
+                        <div class="gallery">
+                            <div class="img1 img"><img src="images/products-2/game.jpg" alt="" style="opacity: 1;">
+                            </div>
+                            <div class="img2 img"><img src="images/products-2/game2.jpg" alt=""></div>
+                            <div class="img3 img"><img src="images/products-2/game3.jpg" alt=""></div>
+                            <div class="img3 img"><img src="images/products-2/game4.jpg" alt=""></div>
+                        </div>
+                        <div class="main-img"><img src="images/products-2/game.jpg" alt=""></div>
+                    </div>
+                    <div class="content-box">
+                        <div class="tag">-3% <span>HOT</span></div>
+                        <div class="bluetooth"><a href="">Xbox Series</a></div>
+                        <p class="headig"><a href="">Xbox Series S - 1TB Gaming All-Digital Console. 4K <br> Streaming
+                                Media</a></p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="price">
+                            $279.99 <span class="past">$289.99</span>
+                        </div>
+                        <p class="details">Package includes Xbox series S - 1TB console, 1 Xbox wireless Controller.
+                            High speed HDMI cable.
+                        </p>
+                        <div class="cart-btn">ADD TO CART</div>
+                    </div>
+                </div>
+                <!-- slider 3 -->
+                <div class="slider-3">
+                    <div class="images-wrap">
+                        <div class="gallery">
+                            <div class="img1 img"><img src="images/products-2/mobile.jpg" alt="" style="opacity: 1;">
+                            </div>
+                            <div class="img2 img"><img src="images/products-2/mobile2.jpg" alt=""></div>
+                            <div class="img3 img"><img src="images/products-2/mobile3.jpg" alt=""></div>
+                            <div class="img3 img"><img src="images/products-2/mobile4.jpg" alt=""></div>
+                        </div>
+                        <div class="main-img"><img src="images/products-2/mobile.jpg" alt=""></div>
+                    </div>
+                    <div class="content-box">
+                        <div class="tag">-26%</div>
+
+                        <div class="bluetooth"><a href="">Samsung Galaxy</a></div>
+                        <p class="headig"><a href="">Samsung Galaxy S23 Ultra, Factory Unlocked, <br> 512GB</a></p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="price">
+                            $699.99 <span class="past">$949.99</span>
+                        </div>
+                        <p class="details">Fast charging 18W, 50% in 30 min USB power delivery 2.0nQi wireless charging.
+                        </p>
+                        <div class="cart-btn">ADD TO CART</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shop Now poster -->
+
+        <div class="shop-now-container">
+            <div class="shop-now-box">
+                <p>USE CODE: <span>SALE35%</span></p>
+                <div class="heading">Heavy On Features Light On <br> Price</div>
+                <div class="details">AMAZING DISCOUNTS AND DEALS</div>
+                <imput class="shop-now-btn">SHOP NOW</imput>
+            </div>
+            <div class="red-box">
+                <div class="tag">NEW PRODUCT</div>
+                <div class="heading">Red Dead 2 <br> Even Better</div>
+                <div class="details">RELEASE DATE & PRICE</div>
+            </div>
+        </div>
+
+
+        <!-- Products Section Starts -->
+
+        <div class="products-main-container">
+            <div class="menu">
+                <div class="heading">Best Seller</div>
+                <ul class="nav">
+                    <li><a href="">Smartphone</a></li>
+                    <li><a href="">Laptops</a></li>
+                    <li><a href="">iWatch</a></li>
+                    <li><a href="">Accessories</a></li>
+                </ul>
+            </div>
+            <div class="products-wrap">
+                <!-- product 1 -->
+                <div class="product">
+                    <div class="image">
+                        <img src="images/products/1.jpg" alt="">
+                        <div class="tag">-26%</div>
+                        <div class="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="whitelist hover-tag">Whitelist</div>
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="quick-view hover-tag">Quick View</div>
+                        <div class="compare">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="com hover-tag">Compare</div>
+                    </div>
+                    <div class="content-box">
+                        <div class="title">Samsung Galaxy</div>
+                        <div class="heading">Samsung Galaxy S23 Ultra, <br> Factory Unlocked 512GB</div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="price">
+                            $699.99 <span class="past">$949.99</span>
+                        </div>
+                        <imput class="shop-now-btn">ADD TO CART</imput>
+                    </div>
+                    <div class="product-desc">
+                        Fast charging 18W, 50% in 30 min USB power delivery 2.0nQi wireless charging.
+                    </div>
+                </div>
+                <!-- product 2 -->
+                <div class=" product-2">
+                    <div class="image">
+                        <img src="images/products/2.jpg" alt="">
+                        <div class="tag">-20%</div>
+                        <div class="tag" style="top: 45px; background-color: red;">HOT</div>
+                        <div class="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="whitelist hover-tag">Whitelist</div>
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="quick-view hover-tag">Quick View</div>
+                        <div class="compare">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="com hover-tag">Compare</div>
+                    </div>
+                    <div class="content-box">
+                        <div class="title">iPhone</div>
+                        <div class="heading">Unlocked Apple iPhone 11 <br> Pro, 64GB/256GB, 12MP...</div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="price">
+                            $480.99 <span class="past">$500.23</span>
+                        </div>
+                        <imput class="shop-now-btn">ADD TO CART</imput>
+                    </div>
+                    <div class="product-desc">
+                        RAM: 16GB <br>
+                        Hard Drive: 256GB SSD <br>
+                        Screen Size: 13.3 inches
+                    </div>
+                </div>
+                <!-- product 3 -->
+                <div class="product-3">
+                    <div class="image">
+                        <img src="images/products/3.jpg" alt="">
+                        <div class="tag">-36%</div>
+                        <div class="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="whitelist hover-tag">Whitelist</div>
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="quick-view hover-tag">Quick View</div>
+                        <div class="compare">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="com hover-tag">Compare</div>
+                    </div>
+                    <div class="content-box">
+                        <div class="title">Prepaid Phones</div>
+                        <div class="heading">Apple iPhone 14 Pro Max <br> (256GB) - White Titanium</div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star" style="color: rgb(208, 208, 208);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(208, 208, 208);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(208, 208, 208);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(208, 208, 208);"></i>
+                            <i class="fa-solid fa-star" style="color: rgb(208, 208, 208);"></i>
+                        </div>
+                        <div class="price">
+                            $519.00 <span class="past">$805.00</span>
+                        </div>
+                        <imput class="shop-now-btn">ADD TO CART</imput>
+                    </div>
+                    <div class="product-desc">
+                        RAM: 16GB <br>
+                        Hard Drive: 256GB SSD <br>
+                        Screen Size: 13.3 inches
+                    </div>
+                </div>
+                <!-- product 4 -->
+                <div class="product-4">
+                    <div class="image">
+                        <img src="images/products/4.jpg" alt="">
+                        <div class="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="whitelist hover-tag">Whitelist</div>
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="quick-view hover-tag">Quick View</div>
+                        <div class="compare">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="com hover-tag">Compare</div>
+                    </div>
+                    <div class="content-box">
+                        <div class="title">iPhone</div>
+                        <div class="heading">Apple iPhone 11 Pro Max <br> Triple Camera</div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="price">
+                            $425.00 - $609.00</span>
+                        </div>
+                        <imput class="shop-now-btn">SELECT OPTIONS</imput>
+                    </div>
+                    <div class="product-desc">
+                        RAM: 16GB <br>
+                        Hard Drive: 256GB SSD <br>
+                        Screen Size: 13.3 inches
+                    </div>
+                </div>
+                <!-- product 5 -->
+                <div class="product-5">
+                    <div class="image">
+                        <img src="images/products/5.jpg" alt="">
+                        <div class="tag">-7%</div>
+                        <div class="tag" style="top: 45px; background-color: red;">HOT</div>
+                        <div class="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="whitelist hover-tag">Whitelist</div>
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="quick-view hover-tag">Quick View</div>
+                        <div class="compare">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="com hover-tag">Compare</div>
+                    </div>
+                    <div class="content-box">
+                        <div class="title">iPhone</div>
+                        <div class="heading">Apple iPhone 15 Pro Max, <br> 512GB, Unlocked</div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="price">
+                            $1,299.00 <span class="past">$1,399.00</span>
+                        </div>
+                        <imput class="shop-now-btn">ADD TO CART</imput>
+                    </div>
+                    <div class="product-desc">
+                        RAM: 16GB <br>
+                        Hard Drive: 256GB SSD <br>
+                        Screen Size: 13.3 inches
+                    </div>
+                </div>
+
+                <!-- product 6 -->
+                <div class="product-6">
+                    <div class="image">
+                        <img src="images/products/6.jpg" alt="">
+                        <div class="tag">-33%</div>
+                        <div class="tag" style="top: 45px; background-color: red;">HOT</div>
+                        <div class="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="whitelist hover-tag">Whitelist</div>
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="quick-view hover-tag">Quick View</div>
+                        <div class="compare">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="com hover-tag">Compare</div>
+                    </div>
+                    <div class="content-box">
+                        <div class="title">Samsung Galaxy</div>
+                        <div class="heading">Samsung Galaxy A54 5G, <br> 128GB, 6.4" - Unlocked</div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="price">
+                            $399.00 <span class="past">$599.00</span>
+                        </div>
+                        <imput class="shop-now-btn">ADD TO CART</imput>
+                    </div>
+                    <div class="product-desc">
+                        RAM: 16GB <br>
+                        Hard Drive: 256GB SSD <br>
+                        Screen Size: 13.3 inches
+                    </div>
+                </div>
+
+                <!-- product 7 -->
+                <div class="product-7">
+                    <div class="image">
+                        <img src="images/products/7.jpg" alt="">
+                        <div class="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="whitelist hover-tag">Whitelist</div>
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="quick-view hover-tag">Quick View</div>
+                        <div class="compare">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="com hover-tag">Compare</div>
+                    </div>
+                    <div class="content-box">
+                        <div class="title">Unlocked Phones</div>
+                        <div class="heading">Unlocked iPhone 12 5G LTE <br> 6.1" 4GB-128GB</div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="price">
+                            $744.00
+                        </div>
+                        <imput class="shop-now-btn">ADD TO CART</imput>
+                    </div>
+                    <div class="product-desc">
+                        RAM: 16GB <br>
+                        Hard Drive: 256GB SSD <br>
+                        Screen Size: 13.3 inches
+                    </div>
+                </div>
+
+                <!-- product 8 -->
+                <div class="product-8">
+                    <div class="image">
+                        <img src="images/products/1.jpg" alt="">
+                        <div class="tag">-46%</div>
+                        <div class="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="whitelist hover-tag">Whitelist</div>
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="quick-view hover-tag">Quick View</div>
+                        <div class="compare">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <div class="com hover-tag">Compare</div>
+                    </div>
+                    <div class="content-box">
+                        <div class="title">Samsung Galaxy</div>
+                        <div class="heading">Samsung Galaxy S23 Ultra, <br> Factory Unlocked 256GB</div>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <div class="price">
+                            $1,499.00 <span class="past">$2,761.00</span>
+                        </div>
+                        <imput class="shop-now-btn">ADD TO CART</imput>
+                    </div>
+                    <div class="product-desc">
+                        RAM: 16GB <br>
+                        Hard Drive: 256GB SSD <br>
+                        Screen Size: 13.3 inches
+                    </div>
+                </div>
+
+
+                <div class="big-sale" style="grid-column: span 2;;"></div>
+
+            </div>
+        </div>
+
+        <!-- Discount Banner  -->
+        <div class="discount-banner-container">
+            <div class="discount-banner">
+                <div class="content">
+                    <div class="title">EXCLUSIVE HEADPHONES</div>
+                    <div class="heading">Discounts 50% On All <br> Headphones</div>
+                    <input type="button" value="SHOP NOW">
+                </div>
+            </div>
+        </div>
+
+        <!-- Sale Boxes  -->
+        <div class="sales-container-main">
+            <div class="sales-wrap">
+                <a href="" class="box box-1">
+                    
+                </a>
+                <a href="" class="box box-2"></a>
+                <a href="" class="box box-3"></a>
+                <a href="" class="box box-4"></a>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            // category clider
+            $('.category-slider').owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                dots: false,
+                nav: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 6
+                    }
+                }
+            })
+
+            // banner slider main 
+            var owl = $('.banner-wrap');
+            owl.owlCarousel({
+                loop: true,
+                autoplay: true,
+                items: 1,
+                margin: 30,
+                stagePadding: 30,
+                smartSpeed: 450,
+                animateOut: 'fadeInDown',
+                animateIn: 'fadeInUp'
+            })
+
+            // deal slider carousel
+            var owl = $('.slider-wrap');
+            owl.owlCarousel({
+                loop: true,
+                autoplay: true,
+                items: 1,
+                margin: 90,
+                smartSpeed: 2050,
+            })
+
+
+
+
+
+
+
+
+            // waypoints check
+
+            // $('.slide-3').waypoint(function () {
+            //     $('.slide-3').addClass('animate__animated animate__fadeInDown');
+            // }, { offset: '0' });
+
+            // $('.slide-3 .image').waypoint(function () {
+            //     $('.slide-3 .image').addClass('animate__animated animate__fadeInUp');
+            // }, { offset: '0' });
+
+
+
+        })
+    </script>
+</body>
+
+</html>
