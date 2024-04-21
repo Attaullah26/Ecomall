@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptops</title>
+
+
+    <!-- Jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- waypoints cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    <!-- animate.css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <!-- owlcarousel stylesheed cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Custom css  -->
+        <link rel="stylesheet" href="css/laptop-style.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- Comman Header Section  -->
+        
+        <!-- upper navbar starts -->
+
+        <div class="upper-nav-main">
+            <div class="upper-nav">
+                <div class="left-side">
+                    <div class="lang-wrap">
+                        <div class="language">Emglish <i class="fa-solid fa-angle-down"></i>
+                            <ul class="lang-list">
+                                <li>Francais</li>
+                                <li>Deutsch</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="currency-wrap">
+                        <div class="currency">USD <i class="fa-solid fa-angle-down"></i>
+                            <ul class="currency-list">
+                                <li>USD</li>
+                                <li>EUR</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <P>Free Shipping On All Orders Over $100</P>
+                </div>
+
+                <!-- riht side starts -->
+
+                <div class="right-side">
+                    <div class="flash-sale"><i class="fa-solid fa-bolt"></i> <a href="">Flash sale</a></div>
+                    <ul class="nav-menu">
+                        <li><a href="">Track order</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Navbar Starts -->
+
+        <div class="navbar-wrap">
+            <div class="logo-section">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="images/logo/logo.png" alt="">
+                </div>
+                <!-- Search -->
+                <div class="search">
+                    <input type="search" name="search" id="search" placeholder="Search for products">
+                    <input type="button" value="SEARCH" class="search-btn">
+                    <div class="search-logo"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <select class="categories">
+                        <option value="">All Categories </option>
+                        <option value="camera">Camera</option>
+                        <option value="camera-accessories">&nbsp;&nbsp;&nbsp;Accessories</option>
+                        <option value="camera-lenses">&nbsp;&nbsp;&nbsp;Camera &amp; Lenses</option>
+                        <option value="drones">&nbsp;&nbsp;&nbsp;Drones</option>
+                        <option value="security-cameras">&nbsp;&nbsp;&nbsp;Security Cameras</option>
+                        <option value="games">Games</option>
+                        <option value="game-accessories">&nbsp;&nbsp;&nbsp;Accessories</option>
+                        <option value="playstation-4">&nbsp;&nbsp;&nbsp;Playstation 4</option>
+                        <option value="playstation-5">&nbsp;&nbsp;&nbsp;Playstation 5</option>
+                        <option value="xbox-series">&nbsp;&nbsp;&nbsp;Xbox Series</option>
+                        <option value="headphones">Headphones</option>
+                        <option value="airpods">&nbsp;&nbsp;&nbsp;AirPods</option>
+                        <option value="gaming-headsets">&nbsp;&nbsp;&nbsp;Gaming Headsets</option>
+                        <option value="kids-headphones">&nbsp;&nbsp;&nbsp;Kids' Headphones</option>
+                        <option value="wireless-earbuds">&nbsp;&nbsp;&nbsp;Wireless Earbuds</option>
+                        <option value="iwatch">Iwatch</option>
+                        <option value="laptops-desktops">Laptops &amp; Desktops</option>
+                        <option value="laptop-accessories">&nbsp;&nbsp;&nbsp;Accessories</option>
+                        <option value="laptops">&nbsp;&nbsp;&nbsp;Laptops</option>
+                        <option value="monitors">&nbsp;&nbsp;&nbsp;Monitors</option>
+                        <option value="smart-home">Smart Home</option>
+                        <option value="smartphone">Smartphone</option>
+                        <option value="iphone">&nbsp;&nbsp;&nbsp;iPhone</option>
+                        <option value="prepaid-phones">&nbsp;&nbsp;&nbsp;Prepaid Phones</option>
+                        <option value="samsung-galaxy">&nbsp;&nbsp;&nbsp;Samsung Galaxy</option>
+                        <option value="unlocked-phones">&nbsp;&nbsp;&nbsp;Unlocked Phones</option>
+                        <option value="speakers">Speakers</option>
+                        <option value="bluetooth-speakers">&nbsp;&nbsp;&nbsp;Bluetooth Speakers</option>
+                        <option value="portable-speakers">&nbsp;&nbsp;&nbsp;Portable Speakers</option>
+                        <option value="professional-speakers">&nbsp;&nbsp;&nbsp;Professional Speakers</option>
+                        <option value="waterproof-speakers">&nbsp;&nbsp;&nbsp;Waterproof Speakers</option>
+                        <option value="tablets">Tablets</option>
+                        <option value="television">Television</option>
+                        <option value="55-tvs">&nbsp;&nbsp;&nbsp;55" TVs</option>
+                        <option value="65-tvs">&nbsp;&nbsp;&nbsp;65" TVs</option>
+                        <option value="oled-tvs">&nbsp;&nbsp;&nbsp;OLED TVs</option>
+                        <option value="qled-tvs">&nbsp;&nbsp;&nbsp;QLED TVs</option>
+                    </select>
+                </div>
+                <!-- Login side -->
+                <div class="login-side">
+                    <div class="search-logo-simple"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="help">
+                        <div class="icon">
+                            <i class="fa-solid fa-headphones-simple"></i>
+                        </div>
+                        <div class="contact">
+                            <p>Need help?</p>
+                            <span><a href="" style="color: #0068C8;">+08 9229 8228</a></span>
+                        </div>
+                    </div>
+
+                    <div class="login">
+                        <div class="icon">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="account">
+                            <p>My account</p>
+                            <span><a href="">Login</a></span>
+                            <div class="popup-login">
+                                <label for="username">Username or email address *</label>
+                                <input type="text">
+                                <label for="password">Password *</label>
+                                <input type="text">
+                                <div class="btn-box">
+                                    <input type="button" value="SIGN IN">
+                                    <input type="checkbox" name="remember" id=""><span>Remember Me</span>
+                                </div>
+                                <p class="create-account">I am new client. <a href="">Create an account</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart">
+                        <div class="icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
+                        <div class="my-cart">
+                            <p>My cart</p>
+                            <span><a href="">$0.00</a></span>
+                        </div>
+                        <div class="cart-popup">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>Your cart is currently empty.</span>
+                        </div>
+                    </div>
+                    <div class="mobile-menu"><i class="fa-solid fa-bars"></i></div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Navbar Menu -->
+
+        <div class="menu-section">
+            <div class="shop-categories">
+                <i class="fa-solid fa-bars"></i>
+                <span>Shop categories</span>
+                <i class="fa-solid fa-angle-down"></i>
+                <ul class="cat-dropdown">
+                    <li class="smartphone"><a class="item1" href="">&nbsp;<i class="fa-solid fa-mobile"></i>
+                            Smartphone</a>
+                        <i class="fa-solid fa-angle-right"></i>
+
+                        <!-- Smartphones dropdown -->
+                        <div class="smartphone-dropdown">
+                            <div class="first">
+                                <div class="computer">
+                                    <h3><a href="">Computers & Tablets</a></h3>
+                                    <ul>
+                                        <li class="item"><a href="">Laptops & Desktops</a></li>
+                                        <li class="item"><a href="">Tablets</a></li>
+                                        <li class="item"><a href="">Monitors</a></li>
+                                        <li class="item"><a href="">Laptops</a></li>
+                                        <li class="item"><a href="">Accessories</a></li>
+                                        <li class="item"><a href="">Drones</a></li>
+                                    </ul>
+                                </div>
+                                <div class="camera">
+                                    <h3><a href="">Camera</a></h3>
+                                    <ul>
+                                        <li class="item"><a href="">Cameras</a></li>
+                                        <li class="item"><a href="">Accessories</a></li>
+                                        <li class="item"><a href="">Lenses</a></li>
+                                        <li class="item"><a href="">Drones</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="second">
+                                <div class="cellphone">
+                                    <h3><a href="">Cell Phones</a></h3>
+                                    <ul>
+                                        <li class="item"><a href="">Smartphones</a></li>
+                                        <li class="item"><a href="">AT&T</a></li>
+                                        <li class="item"><a href="">Iphone</a></li>
+                                        <li class="item"><a href="">Prepaid PHones</a></li>
+                                        <li class="item"><a href="">Sumsang Galaxy</a></li>
+                                        <li class="item"><a href="">Unlocked Phones</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tv">
+                                    <h3><a href="">TV & Home Theaters</a></h3>
+                                    <ul>
+                                        <li class="item"><a href="">Televisions</a></li>
+                                        <li class="item"><a href="">55 TVs</a></li>
+                                        <li class="item"><a href="">65 TVs</a></li>
+                                        <li class="item"><a href="">OLED TVs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sale-poster">
+                                <a class="sale-wrap">
+                                    <span>TOP BRANDS</span>
+                                    <h1>Sale Off 30% <br> Flycam</h1>
+                                </a>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="laptop"><a href="" class="item1"><i class="fa-solid fa-laptop"></i> Laptops</a> <i
+                            class="fa-solid fa-angle-right"></i>
+                        <!-- laptops dropdown -->
+                        <div class="laptop-dropdown">
+                            <ul>
+                                <li class="item"><a href="">Laptops & Desktops</a></li>
+                                <li class="item"><a href="">Accessories</a></li>
+                                <li class="item"><a href="">Chromebook</a></li>
+                                <li class="item"><a href="">Computer Component</a></li>
+                                <li class="item"><a href="">Desktops</a></li>
+                                <li class="item"><a href="">iMac</a></li>
+                                <li class="item"><a href="">Laptops</a></li>
+                                <li class="item"><a href="">Macbook</a></li>
+                                <li class="item"><a href="">Monitors</a></li>
+                                <li class="item"><a href="">PC Gaming</a></li>
+                                <li class="item"><a href="">Printers & Ink</a></li>
+                                <li class="item"><a href="">Resored Computers</a></li>
+                                <li class="item"><a href="">Windows Computers</a></li>
+                            </ul>
+                        </div>
+                    <li><a href="" class="item1"><i class="fa-solid fa-camera"></i> Camera</a></li>
+                    <li><a href="" class="item1"><i class="fa-solid fa-headphones"></i> Headphones</a></li>
+                    <li><a href="" class="item1"><i class="fa-solid fa-gamepad"></i> PC Gaming</a></li>
+                    <li><a href="" class="item1"><i class="fa-solid fa-tablet"></i> Tablets</a></li>
+                    <li><a href="" class="item1"><i class="fa-solid fa-television"></i> Television</a></li>
+                    <li><a href="" class="item1"><i class="fa-solid fa-headphones-simple"></i> Speakers</a></li>
+                    <li><a href="" class="item1"><i class="fa-solid fa-laptop-medical"></i>Kid electronics</a></li>
+                    <li><a href="" class="item1"><i class="fa-solid fa-gift"></i>Tech gift</a></li>
+                </ul>
+                </li>
+            </div>
+            <ul class="navbar-menu">
+                <li class="active home item" style="padding: 12px 0;">Home <i class="fa-solid fa-angle-down"></i>
+
+                    <!-- Home dropdown -->
+                    <div class="home-dropdown">
+                        <div class="dropdown-wrap">
+                            <div class="homepage">
+                                <a href="" class="home-heading">
+                                    <h3>Homepage</h3>
+                                </a>
+                                <ul>
+                                    <li><a href="">Home 01</a></li>
+                                    <li><a href="">Home 02</a></li>
+                                    <li><a href="">Home 03</a></li>
+                                    <li><a href="">Home 04</a></li>
+                                    <li><a href="">Home 05</a></li>
+                                    <li><a href="">Home 06</a></li>
+                                </ul>
+                            </div>
+                            <div class="shop-layout">
+                                <a href="" class="home-heading">
+                                    <h3>Shop Layout</h3>
+                                </a>
+                                <ul>
+                                    <li><a href="">Shop To Categories</a></li>
+                                    <li><a href="">Shop To Brands</a></li>
+                                    <li><a href="">Shop List</a></li>
+                                    <li><a href="">Shop Scroll Sidebar</a></li>
+                                    <li><a href="">Shop Top Filters</a></li>
+                                    <li><a href="">Shop Load More Buttons</a></li>
+                                    <li><a href="">Shop Infinity Scroll</a></li>
+                                    <li><a href="">Shop Ajax Pagination</a></li>
+                                    <li><a href="">Shop </a></li>
+                                </ul>
+                            </div>
+                            <div class="product-layout">
+                                <a href="" class="home-heading">
+                                    <h3>Product Layout</h3>
+                                </a>
+                                <ul>
+                                    <li><a href="">Horizontal Thumbnails</a></li>
+                                    <li><a href="">Vertical Thumbnails</a></li>
+                                    <li><a href="">Grid Thumbnails</a></li>
+                                    <li><a href="">Variation Thumbnails</a></li>
+                                    <li><a href="">Variation Dropdown</a></li>
+                                    <li><a href="">Product Deal</a></li>
+                                    <li><a href="">Group Products</a></li>
+                                    <li><a href="">Products Video</a></li>
+                                </ul>
+                            </div>
+                            <div class="others">
+                                <a href="" class="home-heading">
+                                    <h3>Others</h3>
+                                </a>
+                                <ul>
+                                    <li><a href="">About Us</a></li>
+                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Blog Details</a></li>
+                                    <li><a href="">Track Order</a></li>
+                                    <li><a href="">Flash Sale</a></li>
+                                    <li><a href="">Comming Soon</a></li>
+                                    <li><a href="">404</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item laptop-two" style="padding: 12px 0;">Laptops <i class="fa-solid fa-angle-down"></i>
+
+                    <!-- laptop dropdown two -->
+                    <div class="laptop-dropdown-wrap">
+                        <div class="laptop-dropdown-main">
+                            <div class="first">
+                                <!-- up -->
+                                <div class="computer-tablet">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Computers & Tablets</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Laptops & Desktops</a></li>
+                                        <li><a href="">TAblets</a></li>
+                                        <li><a href="">Monitors</a></li>
+                                        <li><a href="">Laptops</a></li>
+                                        <li><a href="">Accessories</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="cam">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Camera</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Camera</a></li>
+                                        <li><a href="">Accessories</a></li>
+                                        <li><a href="">Camera & Lenses</a></li>
+                                        <li><a href="">Drones</a></li>
+                                        <li><a href="">Security Cameras</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="second">
+                                <div class="cell">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Cellphone</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Smartphones</a></li>
+                                        <li><a href="">AT&T</a></li>
+                                        <li><a href="">iPhons</a></li>
+                                        <li><a href="">Prepaid Phones</a></li>
+                                        <li><a href="">Samsung Galaxy</a></li>
+                                        <li><a href="">Unlocked Phones</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="tv2">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>TV & Home Theaters</h3>
+                                    </a>
+                                    <ul>
+                                        <li class="item"><a href="">Televisions</a></li>
+                                        <li class="item"><a href="">55 TVs</a></li>
+                                        <li class="item"><a href="">65 TVs</a></li>
+                                        <li class="item"><a href="">OLED TVs</a></li>
+                                        <li class="item"><a href="">QLED TVs</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="third">
+                                <div class="audio">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Audio</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Bluetooth Speakers</a></li>
+                                        <li><a href="">Portable Speakers</a></li>
+                                        <li><a href="">Proffessional Speakers</a></li>
+                                        <li><a href="">Waterproof Speakers</a></li>
+                                        <li><a href="">Headphones</a></li>
+                                        <li><a href="">Speakers</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="smart-home">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Smart Home</h3>
+                                    </a>
+                                    <ul>
+                                        <li class="item"><a href="">Smart Home</a></li>
+                                        <li class="item"><a href="">Security Cameras</a></li>
+                                        <li class="item"><a href="">Television</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="fourth">
+                                <div class="video-gaames">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Video Games</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Xbox Serids</a></li>
+                                        <li><a href="">Playstation 4</a></li>
+                                        <li><a href="">Playstation 5</a></li>
+                                        <li><a href="">Gaming Headsets</a></li>
+                                        <li><a href="">Accessories</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="headphones">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Headphones</h3>
+                                    </a>
+                                    <ul>
+                                        <li class="item"><a href="">Headphones</a></li>
+                                        <li class="item"><a href="">Airpods</a></li>
+                                        <li class="item"><a href="">Gaming Headsets</a></li>
+                                        <li class="item"><a href="">Kid's Heaphones</a></li>
+                                        <li class="item"><a href="">Wireless Earbuds</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- SMARTPHONE DROPDOWN -->
+                <li class="item smartphone-two" style="padding: 12px 0;">Smartphones <i
+                        class="fa-solid fa-angle-down"></i>
+                    <div class="smartphone-dropdown-wrap">
+                        <div class="smartphone-dropdown">
+                            <div class="left-side">
+                                <div class="computer-tablet">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Computers & Tablets</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Laptops & Desktops</a></li>
+                                        <li><a href="">TAblets</a></li>
+                                        <li><a href="">Monitors</a></li>
+                                        <li><a href="">Laptops</a></li>
+                                        <li><a href="">Accessories</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="cell">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Cellphone</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Smartphones</a></li>
+                                        <li><a href="">AT&T</a></li>
+                                        <li><a href="">iPhons</a></li>
+                                        <li><a href="">Prepaid Phones</a></li>
+                                        <li><a href="">Samsung Galaxy</a></li>
+                                        <li><a href="">Unlocked Phones</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a class="right-side">
+                                <div class="apple">
+                                    <h1>Apple Watch <br> Deal This <br> Week</h1>
+                                    <span>UP TO $70 OFF</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- HEADPHONES DROPDOWN -->
+                <li class="item headphone-main" style="padding: 12px 0;">Headphones <i
+                        class="fa-solid fa-angle-down"></i>
+                    <div class="headphone-dropdown">
+                        <div class="headphone-dropdown-wrap">
+                            <div class="up">
+                                <div class="computer-tablet">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Computers & Tablets</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Laptops & Desktops</a></li>
+                                        <li><a href="">TAblets</a></li>
+                                        <li><a href="">Monitors</a></li>
+                                        <li><a href="">Laptops</a></li>
+                                        <li><a href="">Accessories</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="cell">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Cellphone</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Smartphones</a></li>
+                                        <li><a href="">AT&T</a></li>
+                                        <li><a href="">iPhons</a></li>
+                                        <li><a href="">Prepaid Phones</a></li>
+                                        <li><a href="">Samsung Galaxy</a></li>
+                                        <li><a href="">Unlocked Phones</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="audio">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Audio</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Bluetooth Speakers</a></li>
+                                        <li><a href="">Portable Speakers</a></li>
+                                        <li><a href="">Proffessional Speakers</a></li>
+                                        <li><a href="">Waterproof Speakers</a></li>
+                                        <li><a href="">Headphones</a></li>
+                                        <li><a href="">Speakers</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="video-gaames">
+                                    <a href="" class="heading" style="padding: 0;">
+                                        <h3>Video Games</h3>
+                                    </a>
+                                    <ul>
+                                        <li><a href="">Xbox Serids</a></li>
+                                        <li><a href="">Playstation 4</a></li>
+                                        <li><a href="">Playstation 5</a></li>
+                                        <li><a href="">Gaming Headsets</a></li>
+                                        <li><a href="">Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="down">
+                                <a class="computer-product box">
+                                    <h1>Computers</h1>
+                                    <span>36 Products</span>
+                                </a>
+                                <a class="cell-product box">
+                                    <h1>Cell Phone</h1>
+                                    <span>17 Products</span>
+                                </a>
+                                <a class="audio-product box">
+                                    <h1>Audio</h1>
+                                    <span>15 Products</span>
+                                </a>
+                                <a class="video-product box">
+                                    <h1>Video Games</h1>
+                                    <span>20 Products</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item" style="padding: 12px 0;">Camera </li>
+            </ul>
+            <div class="deal">
+                <i class="fa-regular fa-heart"></i>
+                <span>Today's deal</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Section Starts  -->
+    
+        <!-- Footer Section Starts here  -->
+
+        <div class="footer-main-container">
+            <div class="section-1">
+                <div class="logo-box">
+                    <div class="logo"><img src="images/logo/logo.png" alt=""></div>
+                    <p>Find a location nearet you. <br> See <a href=""><span>Our Stores</span></a></p>
+                    <p class="support-link"><a href="">Support1234@Ecomall.com</a></p>
+                    <p class="bold">+08 9229 8228</p>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </div>
+                </div>
+                <div class="about-box">
+                    <div class="heading">About Us</div>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">News & Blogs</a></li>
+                        <li><a href="">Brands</a></li>
+                        <li><a href="">Press Center</a></li>
+                        <li><a href="">Advertising</a></li>
+                        <li><a href="">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="support-box">
+                    <div class="heading">Support</div>
+                    <ul>
+                        <li><a href="">Support Center</a></li>
+                        <li><a href="">Manage</a></li>
+                        <li><a href="">Service</a></li>
+                        <li><a href="">Haul Away</a></li>
+                        <li><a href="">Security Center</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="order-box">
+                    <div class="heading">Order</div>
+                    <ul>
+                        <li><a href="">Check Order</a></li>
+                        <li><a href="">Delivery & Pickup</a></li>
+                        <li><a href="">Returns</a></li>
+                        <li><a href="">Exchanges</a></li>
+                        <li><a href="">Developers</a></li>
+                        <li><a href="">Gift Cards</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Section 2 -->
+            <div class="section-2">
+                <div class="heading">Trending Tags:</div>
+                <div class="tag-container">
+                    <div class="tag"><a href="">Accessories</a></div>
+                    <div class="tag"><a href="">Apple iPhone</a></div>
+                    <div class="tag"><a href="">Camera & Video</a></div>
+                    <div class="tag"><a href="">Cellphone</a></div>
+                    <div class="tag"><a href="">Desktop Compputer</a></div>
+                    <div class="tag"><a href="">Electronic</a></div>
+                    <div class="tag"><a href="">Game</a></div>
+                    <div class="tag"><a href="">Gaming Headsets</a></div>
+                    <div class="tag"><a href="">Headphone</a></div>
+                    <div class="tag"><a href="">iWatch</a></div>
+                    <div class="tag"><a href="">Kid's Electronics</a></div>
+                    <div class="tag"><a href="">Laptop</a></div>
+                    <div class="tag"><a href="">Mobile & Tablet</a></div>
+                    <div class="tag"><a href="">Panasonic</a></div>
+                    <div class="tag"><a href="">PC Gaming</a></div>
+                    <div class="tag"><a href="">Smartwatches</a></div>
+                    <div class="tag"><a href="">Speaker</a></div>
+                    <div class="tag"><a href="">Tech Accessories</a></div>
+                    <div class="tag"><a href="">Television</a></div>
+                </div>
+            </div>
+            <div class="section-3">
+                <div class="copywrite">
+                    © Ecomall. All Rights Reserved.
+                </div>
+                <div class="payment-img">
+                    <img src="images/payment/payment.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>

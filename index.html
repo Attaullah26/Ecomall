@@ -154,6 +154,17 @@
                         <div class="account">
                             <p>My account</p>
                             <span><a href="">Login</a></span>
+                            <div class="popup-login">
+                                <label for="username">Username or email address *</label>
+                                <input type="text">
+                                <label for="password">Password *</label>
+                                <input type="text">
+                                <div class="btn-box">
+                                    <input type="button" value="SIGN IN">
+                                    <input type="checkbox" name="remember" id=""><span>Remember Me</span>
+                                </div>
+                                <p class="create-account">I am new client. <a href="">Create an account</a></p>
+                            </div>
                         </div>
                     </div>
 
@@ -164,6 +175,10 @@
                         <div class="my-cart">
                             <p>My cart</p>
                             <span><a href="">$0.00</a></span>
+                        </div>
+                        <div class="cart-popup">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>Your cart is currently empty.</span>
                         </div>
                     </div>
                     <div class="mobile-menu"><i class="fa-solid fa-bars"></i></div>
@@ -1177,13 +1192,517 @@
         <div class="sales-container-main">
             <div class="sales-wrap">
                 <a href="" class="box box-1">
-                    
+                    <div class="tag">NEW PRODUCT</div>
+                    <div class="heading">Release Date & Prices</div>
+                    <div class="desc">TODAY'S SUPPER OFFER</div>
                 </a>
-                <a href="" class="box box-2"></a>
-                <a href="" class="box box-3"></a>
-                <a href="" class="box box-4"></a>
+                <a href="" class="box box-2">
+                    <div class="tag">BIG SALE</div>
+                    <div class="heading">Biggest Discount</div>
+                    <div class="desc">Upto 75% OFF</div>
+                </a>
+                <a href="" class="box box-3">
+                    <div class="tag">WEEKEND DEAL</div>
+                    <div class="heading">The Great Sale</div>
+                    <div class="desc">Gift Card $150</div>
+                </a>
+                <a href="" class="box box-4">
+                    <div class="tag">MONTH DEAL</div>
+                    <div class="heading">Spring Clean Sale</div>
+                    <div class="desc">Upto 45% OFF</div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Tending Products  -->
+
+        <div class="trending-products-container-main">
+            <div class="trending-products-wrap">
+                <div class="heading">
+                    Trending Products
+                </div>
+                <hr>
+                <div class="trending-products-slider-main owl-carousel">
+
+                    <!-- Product 1 -->
+                    <div class="trending-product-1">
+                        <div class="trending-product-inside-1">
+                            <div class="image">
+                                <img src="images/products/1.jpg" alt="">
+                                <div class="tag">-46%</div>
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="whitelist hover-tag">Whitelist</div>
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="quick-view hover-tag">Quick View</div>
+                                <div class="compare">
+                                    <i class="fa-solid fa-database"></i>
+                                </div>
+                                <div class="com hover-tag">Compare</div>
+                            </div>
+                            <div class="content-box">
+                                <div class="title">Samsung Galaxy</div>
+                                <div class="heading" style="font-size: .8rem;">Samsung Galaxy S23 Ultra, <br> Factory
+                                    Unlocked 512GB</div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <div class="price">
+                                    $699.99 <span class="past">$949.99</span>
+                                </div>
+                            </div>
+                        </div>
+                        <imput class="shop-now-btn">ADD TO CART</imput>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="trending-product-2">
+                        <div class="trending-product-inside-2">
+                            <div class="image">
+                                <img src="images/products/22.jpg" alt="">
+                                <div class="tag" style="background-color: red;">HOT</div>
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="whitelist hover-tag">Whitelist</div>
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="quick-view hover-tag">Quick View</div>
+                                <div class="compare">
+                                    <i class="fa-solid fa-database"></i>
+                                </div>
+                                <div class="com hover-tag">Compare</div>
+                            </div>
+                            <div class="content-box">
+                                <div class="title">iWatch</div>
+                                <div class="heading">Apple Watch Series 8 <br> 4G WatchOS 9</div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(176, 176, 176);"></i>
+                                </div>
+                                <div class="price">
+                                    $950.00
+                                </div>
+                            </div>
+                        </div>
+                        <imput class="shop-now-btn">ADD TO CART</imput>
+                    </div>
+
+
+                    <!-- Product 3 -->
+                    <div class="trending-product-3">
+                        <div class="trending-product-inside-3">
+                            <div class="image">
+                                <img src="images/products/33.jpg" alt="">
+                                <div class="tag">-15%</div>
+                                <div class="tag" style="background-color: red; margin-top: 25px;">HOT</div>
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="whitelist hover-tag">Whitelist</div>
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="quick-view hover-tag">Quick View</div>
+                                <div class="compare">
+                                    <i class="fa-solid fa-database"></i>
+                                </div>
+                                <div class="com hover-tag">Compare</div>
+                            </div>
+                            <div class="content-box">
+                                <div class="title">Laptops</div>
+                                <div class="heading">Macbook Pro 13.3" <br> 16GB/512GB Silver</div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <div class="price">
+                                    $1,527.00 <span class="past">$1,795.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <imput class="shop-now-btn">ADD TO CART</imput>
+                    </div>
+
+
+
+                    <!-- Product 4 -->
+                    <div class="trending-product-4">
+                        <div class="trending-product-inside-4">
+                            <div class="image">
+                                <img src="images/products/4.jpg" alt="">
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="whitelist hover-tag">Whitelist</div>
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="quick-view hover-tag">Quick View</div>
+                                <div class="compare">
+                                    <i class="fa-solid fa-database"></i>
+                                </div>
+                                <div class="com hover-tag">Compare</div>
+                            </div>
+                            <div class="content-box">
+                                <div class="title">iPhonr</div>
+                                <div class="heading">Apple iPhone 11 Pro <br> Max Triple Camera</div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <div class="price">
+                                    $425.00 - $609.00
+                                </div>
+                            </div>
+                        </div>
+                        <imput class="shop-now-btn">ADD TO CART</imput>
+                    </div>
+
+
+
+                    <!-- Trending Products Wrap main 2 -->
+
+                    <!-- Product 5
+                    <div class="trending-product-1">
+                        <div class="trending-product-inside-1 owl-carousel">
+                            <div class="image">
+                                <img src="images/products/37-400x400.jpg" alt="">
+                                <div class="tag">-17%</div>
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="whitelist hover-tag">Whitelist</div>
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="quick-view hover-tag">Quick View</div>
+                                <div class="compare">
+                                    <i class="fa-solid fa-database"></i>
+                                </div>
+                                <div class="com hover-tag">Compare</div>
+                            </div>
+                            <div class="content-box">
+                                <div class="title">Bluetooth Speakers</div>
+                                <div class="heading">Portable Bluetooth <br> Speaker With Voice...</div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <div class="price">
+                                    $65.55 <span class="past">$69.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <imput class="shop-now-btn">ADD TO CART</imput>
+                    </div>
+
+                    Product 6
+                    <div class="trending-product-1">
+                        <div class="trending-product-inside-1">
+                            <div class="image">
+                                <img src="images/products/26-400x400.jpg" alt="">
+                                <div class="tag" style="background-color: red;">HOT</div>
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="whitelist hover-tag">Whitelist</div>
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="quick-view hover-tag">Quick View</div>
+                                <div class="compare">
+                                    <i class="fa-solid fa-database"></i>
+                                </div>
+                                <div class="com hover-tag">Compare</div>
+                            </div>
+                            <div class="content-box">
+                                <div class="title">Camera & Lenses</div>
+                                <div class="heading">Full HD Camcorder With<br> With 20X Optical Zoom</div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star" style="color: rgb(176, 176, 176);"></i>
+                                </div>
+                                <div class="price">
+                                    $498.00 <span class="past">$598.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <imput class="shop-now-btn">ADD TO CART</imput>
+                    </div>
+
+
+                    Product 7
+                    <div class="trending-product-1">
+                        <div class="trending-product-inside-1">
+                            <div class="image">
+                                <img src="images/products/54-400x400.jpg" alt="">
+                                <div class="tag">-3%</div>
+                                <div class="tag" style="background-color: red; margin-top: 25px;">HOT</div>
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="whitelist hover-tag">Whitelist</div>
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="quick-view hover-tag">Quick View</div>
+                                <div class="compare">
+                                    <i class="fa-solid fa-database"></i>
+                                </div>
+                                <div class="com hover-tag">Compare</div>
+                            </div>
+                            <div class="content-box">
+                                <div class="title">Xbox Series</div>
+                                <div class="heading">Xbox Series S - 1TB <br> Gaming All Digital...</div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="price">
+                                    $279.99 <span class="past">$289.99</span>
+                                </div>
+                            </div>
+                        </div>
+                        <imput class="shop-now-btn">ADD TO CART</imput>
+                    </div>
+
+
+
+                    Product 8
+                    <div class="trending-product-1">
+                        <div class="trending-product-inside-1">
+                            <div class="image">
+                                <img src="images/products/53-400x400.jpg" alt="">
+                                <div class="tag">-28%</div>
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+                                <div class="whitelist hover-tag">Whitelist</div>
+                                <div class="search">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="quick-view hover-tag">Quick View</div>
+                                <div class="compare">
+                                    <i class="fa-solid fa-database"></i>
+                                </div>
+                                <div class="com hover-tag">Compare</div>
+                            </div>
+                            <div class="content-box">
+                                <div class="title">Xbox Series</div>
+                                <div class="heading">Wired Controller For <br> Xbox Series</div>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div class="price">
+                                    $78.89 <span class="past">$109.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <imput class="shop-now-btn">ADD TO CART</imput>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Companies Slider Section -->
+        <div class="companies-main-wrap">
+            <div class="companies-wrap owl-carousel">
+                <div class="company dell">
+                </div>
+                <div class="company lenovo">
+                </div>
+                <div class="company pana">
+                </div>
+                <div class="company sony">
+                </div>
+                <div class="company asus">
+                </div>
+                <div class="company samsung">
+                </div>
+                <div class="company sanyo">
+                </div>
+                <div class="company oppo">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Newsletter Section  -->
+
+        <div class="newsletter-container">
+            <div class="newsletter-wrap">
+                <div class="heading">Sign Up For Newsletter & Get <br> 20% Off</div>
+                <div class="email-box">
+                    <input type="email" placeholder="Your e-mail address">
+                    <input type="button" value="SUBSCRIBE">
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Delivery Box Section  -->
+        <div class="delivery-container">
+            <div class="delivery-box box">
+                <div class="image">
+                    <i class="fa-solid fa-truck"></i>
+                </div>
+                <div class="des-b0x">
+                    <div class="title">Free Delivery</div>
+                    <div class="des">Free shipping on all order</div>
+                </div>
             </div>
 
+            <div class="return-box box">
+                <div class="image">
+                    <i class="fa-solid fa-dollar"></i>
+                </div>
+                <div class="des-b0x">
+                    <div class="title">Return</div>
+                    <div class="des">FBack guarantee under 7 <br> daysr</div>
+                </div>
+            </div>
+
+            <div class="support-box box">
+                <div class="image">
+                    <i class="fa-solid fa-headphones"></i>
+                </div>
+                <div class="des-b0x">
+                    <div class="title">SUPPORT 24/7</div>
+                    <div class="des">Support online 24 hours a <br> day</div>
+                </div>
+            </div>
+
+            <div class="payment-box box">
+                <div class="image">
+                    <i class="fa-solid fa-money-bill"></i>
+                </div>
+                <div class="des-b0x">
+                    <div class="title">PAYMENTS</div>
+                    <div class="des">Support online 24 hours a <br> day</div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Footer Section Starts here  -->
+
+        <div class="footer-main-container">
+            <div class="section-1">
+                <div class="logo-box">
+                    <div class="logo"><img src="images/logo/logo.png" alt=""></div>
+                    <p>Find a location nearet you. <br> See <a href=""><span>Our Stores</span></a></p>
+                    <p class="support-link"><a href="">Support1234@Ecomall.com</a></p>
+                    <p class="bold">+08 9229 8228</p>
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </div>
+                </div>
+                <div class="about-box">
+                    <div class="heading">About Us</div>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">News & Blogs</a></li>
+                        <li><a href="">Brands</a></li>
+                        <li><a href="">Press Center</a></li>
+                        <li><a href="">Advertising</a></li>
+                        <li><a href="">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="support-box">
+                    <div class="heading">Support</div>
+                    <ul>
+                        <li><a href="">Support Center</a></li>
+                        <li><a href="">Manage</a></li>
+                        <li><a href="">Service</a></li>
+                        <li><a href="">Haul Away</a></li>
+                        <li><a href="">Security Center</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="order-box">
+                    <div class="heading">Order</div>
+                    <ul>
+                        <li><a href="">Check Order</a></li>
+                        <li><a href="">Delivery & Pickup</a></li>
+                        <li><a href="">Returns</a></li>
+                        <li><a href="">Exchanges</a></li>
+                        <li><a href="">Developers</a></li>
+                        <li><a href="">Gift Cards</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Section 2 -->
+            <div class="section-2">
+                <div class="heading">Trending Tags:</div>
+                <div class="tag-container">
+                    <div class="tag"><a href="">Accessories</a></div>
+                    <div class="tag"><a href="">Apple iPhone</a></div>
+                    <div class="tag"><a href="">Camera & Video</a></div>
+                    <div class="tag"><a href="">Cellphone</a></div>
+                    <div class="tag"><a href="">Desktop Compputer</a></div>
+                    <div class="tag"><a href="">Electronic</a></div>
+                    <div class="tag"><a href="">Game</a></div>
+                    <div class="tag"><a href="">Gaming Headsets</a></div>
+                    <div class="tag"><a href="">Headphone</a></div>
+                    <div class="tag"><a href="">iWatch</a></div>
+                    <div class="tag"><a href="">Kid's Electronics</a></div>
+                    <div class="tag"><a href="">Laptop</a></div>
+                    <div class="tag"><a href="">Mobile & Tablet</a></div>
+                    <div class="tag"><a href="">Panasonic</a></div>
+                    <div class="tag"><a href="">PC Gaming</a></div>
+                    <div class="tag"><a href="">Smartwatches</a></div>
+                    <div class="tag"><a href="">Speaker</a></div>
+                    <div class="tag"><a href="">Tech Accessories</a></div>
+                    <div class="tag"><a href="">Television</a></div>
+                </div>
+            </div>
+            <div class="section-3">
+                <div class="copywrite">
+                    © Ecomall. All Rights Reserved.
+                </div>
+                <div class="payment-img">
+                    <img src="images/payment/payment.png" alt="">
+                </div>
+            </div>
         </div>
 
 
@@ -1191,7 +1710,20 @@
 
 
 
+
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1248,6 +1780,46 @@
             })
 
 
+
+            // Trending Products clider
+            $('.trending-products-slider-main').owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplay: false,
+                dots: true,
+                nav: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 2
+                    },
+                    1200: {
+                        items: 3
+                    }
+                }
+            })
+
+
+            // Companies Logo Sectionslider
+            $('.companies-wrap').owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplay: false,
+                nav: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 6
+                    }
+                }
+            })
 
 
 

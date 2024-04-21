@@ -1,0 +1,1144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Upper Nav Menu Starts */
+
+.upper-nav-main {
+    width: 100%;
+    background-color: black;
+    color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: center;
+}
+
+.upper-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1250px;
+    font-family: sans-serif;
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+.upper-nav ul li {
+    list-style: none;
+    padding: 4px 2px;
+}
+
+.left-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lang-wrap {
+    margin-right: 22px;
+    position: relative;
+}
+
+.lang-wrap .lang-list {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -5px;
+    color: black;
+    background-color: white;
+    box-shadow: .3px .3px .9px black;
+    padding: 8px 15px 15px 8px;
+    border-radius: 8px;
+}
+
+.currency-wrap {
+    margin-right: 22px;
+    position: relative;
+}
+
+.currency-wrap .currency-list {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -5px;
+    color: black;
+    background-color: white;
+    box-shadow: .3px .3px .9px black;
+    padding: 8px 15px 15px 8px;
+    border-radius: 8px;
+}
+
+.language,
+.currency {
+    padding: 12px 0px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.language:hover,
+.currency:hover {
+    color: rgb(12, 12, 180);
+}
+
+/* Upper Nav Right Side */
+
+.right-side {
+    display: flex;
+    align-items: center;
+}
+
+.flash-sale {
+    margin-right: 6px;
+}
+
+.right-side .nav-menu {
+    display: flex;
+}
+
+.nav-menu li a {
+    padding: 0 12px;
+    text-decoration: none;
+    color: white;
+    transition: all .2s;
+}
+
+.nav-menu li a:hover {
+    color: rgb(12, 12, 180);
+}
+
+.flash-sale,
+.flash-sale a {
+    text-decoration: none;
+    color: rgb(255, 193, 37);
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
+
+hr {
+    width: 100%;
+    max-width: 1250px;
+    margin-top: 40px;
+}
+
+/* Upper Nav Menu Media Queries */
+
+@media only screen and (max-width: 1300px) {
+    .upper-nav {
+        padding: 12px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .upper-nav .left-side p {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .upper-nav {
+        display: none;
+    }
+}
+
+
+/* Navbar Starts */
+
+.navbar-wrap {
+    display: flex;
+    width: 100%;
+    max-width: 1250px;
+    margin-top: 30px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color: white;
+    padding-bottom: 12px;
+    width: 1005;
+}
+
+.logo-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-section .logo img {
+    width: 150px;
+    height: 40px;
+    margin-right: 4rem;
+    cursor: pointer;
+}
+
+.search input[type="search"] {
+    position: relative;
+    padding: 14px;
+    padding-left: 200px;
+    width: 100%;
+    min-width: 550px;
+    border: 2.7px solid #0068C8;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #F8F8F8;
+    outline: none;
+}
+
+.search {
+    position: relative;
+    margin-right: 2.5rem;
+}
+
+.categories {
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    width: 170px;
+    padding: 14px;
+    border: none;
+    font-size: .9rem;
+    color: black;
+    font-weight: 500;
+    border-radius: 10px;
+    outline: none;
+}
+.categories::-webkit-scrollbar {
+    width: 5px;
+}
+.categories::-webkit-scrollbar-track {
+    background-color: rgb(216, 216, 216);
+    border-radius: 20px;
+}
+/* .categories::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    width: 12px;
+    background-color: black;
+} */
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 25px;
+    color: white;
+    height: 100%;
+    background-color: #0068C8;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.search-logo i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 25px;
+    color: white;
+    height: 100%;
+    background-color: #0068C8;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    text-align: center;
+    padding-top: 19px;
+    display: none;
+}
+
+.search-logo-simple {
+    display: none;
+}
+
+.login-side {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.help,
+.login,
+.cart {
+    display: flex;
+    align-items: center;
+}
+
+.login-side .fa-solid,
+.fa-regular,
+.fa-light {
+    padding-right: 14px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all .2s;
+}
+.login-side .fa-solid:hover,
+.fa-regular:hover,
+.fa-light:hover {
+    color: #0371d2;
+}
+.account {
+    position: relative;
+}
+.account .popup-login {
+    position: absolute;
+    top: 65px;
+    right: -140px;
+    background-color: #ffffff;
+    width: 420px;
+    border-radius: 10px;
+    border: 2px solid rgb(234, 234, 234);
+    padding: 40px;
+    display: none;
+}
+.account .popup-login input[type="text"] {
+    padding: 15px ;
+    width: 100%;
+    margin-bottom: 22px;
+    border-radius: 8px;
+    border: 2px solid rgb(231, 231, 231);
+    outline: none;
+}
+.account .popup-login label {
+    font-family: sans-serif;
+    display: block;
+    margin: 5px 0;
+}
+.account .popup-login .btn-box input[type="button"]{
+    padding: 15px 18px;
+    background-color: #0371d2;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    width: 160px;
+    margin: 12px;
+    transition: all .2s;
+    border: 1px solid white;
+}
+.account .popup-login .btn-box input[type="button"]:hover {
+    background-color: white;
+    color: #0068C8;
+    border: 1px solid #0068C8;
+}
+.account .popup-login .btn-box span {
+    padding: 0 6px;
+    font-family: sans-serif;
+    color: rgb(183, 183, 183);
+}
+.account .popup-login .create-account {
+    font-size: 1rem;
+}
+.account .popup-login .create-account a {
+    color: #0068C8;
+}
+.account .popup-login .create-account a:hover {
+    text-decoration: underline;
+}
+.cart {
+    position: relative;
+}
+.cart .cart-popup {
+    position: absolute;
+    top: 60px;
+    width: 370px;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    right: -50px;
+    font-family: sans-serif;
+    border-radius: 10px;
+    border: 2px solid rgb(234, 234, 234);
+    display: none;
+}
+.cart .cart-popup i {
+    font-size: 7rem;
+    margin-bottom: 2rem;
+    color: rgb(216, 216, 216);
+    z-index: 0;
+}
+.cart .cart-popup i:hover {
+    cursor: auto;
+    color: rgb(216, 216, 216);
+}
+.login-side p {
+    font-size: .7rem;
+    font-family: sans-serif;
+    color: rgb(158, 158, 158);
+    padding-bottom: 6px;
+}
+
+.login-side a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.mobile-menu {
+    display: none;
+}
+.account a {
+    font-family: sans-serif;
+    transition: all .2s;
+}
+.account a:hover {
+    color: #0371d2;
+}
+.my-cart a {
+    font-family: sans-serif;
+    transition: all .2s;
+}
+.my-cart a:hover {
+    color: #0371d2;
+}
+
+/* Navbar Logo Section Media Queries */
+
+@media only screen and (max-width: 1200px) {
+    .search-btn {
+        display: none;
+    }
+
+    .search i {
+        display: inline-block;
+    }
+
+    .logo-section {
+        padding: 12px;
+    }
+
+    .login .account {
+        display: none;
+    }
+
+    .cart .my-cart {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .nabbar-wrap {
+        display: grid;
+        grid-template-columns: 25% 70% 15%;
+    }
+
+    .search,
+    .search input[type="search"] {
+        margin-right: 12px;
+        width: 100%;
+        min-width: 650px;
+    }
+
+    .login-side {
+        display: flex;
+        justify-content: center;
+    }
+
+    .help {
+        display: none;
+    }
+
+    .search input[type="search"] {
+        padding-right: 30px;
+    }
+
+    .logo img {
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .search,
+    .search input[type="search"] {
+        width: 80%;
+        min-width: 550px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .search,
+    .search input[type="search"] {
+        width: 80%;
+        min-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    .search,
+    .search input[type="search"] {
+        width: 80%;
+        min-width: 450px;
+    }
+
+    .logo img {
+        margin-right: 1rem;
+    }
+}
+
+
+@media only screen and (max-width: 770px) {
+
+    .search,
+    .search input[type="search"] {
+        display: none;
+    }
+
+    .login-side {
+        width: 70px;
+        margin-right: 12px;
+    }
+
+    .navbar-wrap {
+        justify-content: space-between;
+    }
+
+    .search-logo-simple {
+        display: flex;
+    }
+
+    .search-logo-simple i {
+        font-size: .5rem;
+    }
+
+    .mobile-menu {
+        display: block;
+        padding-right: 35px;
+    }
+}
+
+
+
+/* Menu Section */
+
+.menu-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1250px;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.shop-categories {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 0;
+}
+
+.shop-categories .cat-dropdown {
+    margin-top: 24px;
+    background-color: white;
+    position: absolute;
+    top: 22px;
+    left: 0;
+    display: none;
+}
+
+.shop-categories .cat-dropdown li {
+    list-style: none;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-categories .cat-dropdown li .item1:hover {
+    color: #0068C8;
+}
+
+.shop-categories .cat-dropdown li .item1 {
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 15px;
+    font-family: sans-serif;
+    font-weight: 700;
+    border-bottom: .01px solid rgb(165, 165, 165);
+    width: 100%;
+    transition: all .2s;
+}
+
+.shop-categories .cat-dropdown li i {
+    display: inline-block;
+    padding: 0;
+    margin-right: 20px;
+    font-size: 1.3rem;
+    color: rgb(167, 167, 167);
+}
+
+.shop-categories:hover {
+    color: #0068C8;
+}
+
+.shop-categories .fa-bars {
+    font-size: 1.2rem;
+    padding-right: 5px;
+    color: rgb(108, 108, 108);
+}
+
+.shop-categories .fa-bars:hover {
+    color: #0068C8;
+
+}
+
+.shop-categories span {
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-right: 70px;
+}
+
+.shop-categories .fa-angle-down {
+    font-size: .8rem;
+    color: rgb(105, 105, 105);
+    position: absolute;
+}
+
+.shop-categories .cat-dropdown .smartphone .fa-angle-right {
+    font-size: .8rem;
+    margin-top: 20px;
+}
+
+.shop-categories .cat-dropdown .laptop .fa-angle-right {
+    font-size: .8rem;
+    margin-top: 20px;
+}
+
+/* smartphone dropdown */
+
+.shop-categories .smartphone-dropdown {
+    position: absolute;
+    left: 250px;
+    background-color: white;
+    margin-top: 24px;
+    flex-direction: row;
+    background-color: white;
+    position: absolute;
+    top: -23px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    border: 2px solid rgb(234, 234, 234);
+
+}
+
+.shop-categories .smartphone-dropdown .computer,
+.camera,
+.tv,
+.cellphone {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-left: 30px;
+}
+
+.shop-categories .smartphone-dropdown .computer,
+.camera,
+.tv,
+.cellphone,
+h3 {
+    margin-bottom: 22px;
+    font-size: 1.2rem;
+}
+
+.shop-categories .smartphone-dropdown .computer,
+.camera,
+.tv,
+.cellphone,
+h3 a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+
+.shop-categories .smartphone-dropdown .computer,
+.camera,
+.tv,
+.cellphone,
+.item {
+    list-style: none;
+}
+
+.shop-categories .smartphone-dropdown .computer,
+.camera,
+.tv,
+.cellphone,
+.item a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    display: block;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: .9rem;
+    font-weight: 600;
+    transition: all .2s;
+}
+
+.shop-categories .smartphone-dropdown .computer,
+.camera,
+.tv,
+.cellphone,
+.item a:hover {
+    color: #0068C8;
+}
+
+.shop-categories .smartphone-dropdown .sale-poster {
+    position: relative;
+    border: 2px solid;
+    width: 330px;
+    height: 480px;
+    margin-left: 10px;
+    margin-top: 30px;
+    border-radius: 12px;
+    background-image: url('/images/banners/menu-banner-1.jpg');
+    background-position: center;
+    background-size: cover;
+    transition: all 1s;
+}
+
+.shop-categories .smartphone-dropdown .sale-poster:hover {
+    transform: scale(1.02);
+}
+
+.shop-categories .smartphone-dropdown .sale-poster .sale-wrap {
+    display: block;
+    position: absolute;
+    left: 35px;
+    bottom: 60px;
+    text-decoration: none;
+    color: white;
+}
+
+.shop-categories .smartphone-dropdown .sale-poster .sale-wrap span {
+    font-family: sans-serif;
+    display: block;
+    color: gray;
+    margin-bottom: 15px;
+}
+
+.shop-categories .smartphone-dropdown .sale-poster .sale-wrap h1 {
+    font-family: sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+/* Laptops dropdown */
+.laptop-dropdown {
+    position: absolute;
+    left: 250px;
+    border: 2px solid rgb(234, 234, 234);
+    background-color: white;
+    margin-top: 24px;
+    flex-direction: row;
+    background-color: white;
+    position: absolute;
+    top: -24px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+    display: none;
+}
+
+/* navbar menu  */
+
+.navbar-menu {
+    display: flex;
+    z-index: 1;
+}
+
+.active {
+    color: #0068C8;
+}
+
+.navbar-menu .item {
+    list-style: none;
+    /* display: inline-block; */
+    /* padding: 10px 0; */
+    margin-right: 50px;
+    font-size: .9rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.navbar-menu li:hover {
+    color: #0068C8;
+}
+
+.navbar-menu .fa-angle-down {
+    font-size: .8rem;
+    color: rgb(105, 105, 105);
+}
+
+.deal span {
+    transition: all .2s;
+    font-weight: 700;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.deal span:hover {
+    color: #0068C8;
+}
+
+/* Home dropdown */
+
+.home {
+    position: relative;
+}
+
+.home-dropdown {
+    background-color: white;
+    position: absolute;
+    top: 44px;
+    right: -807px;
+    padding: 55px 40px;
+    display: none;
+    width: 100%;
+    min-width: 1150px;
+    border: 2px solid rgb(234, 234, 234);
+
+}
+
+.home-dropdown .dropdown-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-dropdown .home-heading {
+    text-decoration: none;
+    margin-bottom: 22px;
+    font-size: 1.2rem;
+}
+
+.home-dropdown a h3 {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    padding-bottom: -20px;
+}
+
+.home-dropdown li {
+    list-style: none;
+}
+
+.home-dropdown li a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    display: block;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: .95rem;
+    font-weight: 500;
+    transition: all .2s;
+}
+
+.home-dropdown ul li a:hover {
+    color: #0068C8;
+}
+
+/* Laptop dropdown tow */
+
+.laptop-two {
+    position: relative;
+}
+
+.laptop-dropdown-main {
+    background-color: white;
+    width: 85vw;
+    position: absolute;
+    top: 44px;
+    right: -742px;
+    padding: 55px 40px;
+    display: flex;
+    flex-direction: row;
+    padding: 35px;
+    width: 100%;
+    min-width: 1250px;
+    border: 2px solid rgb(234, 234, 234);
+
+}
+
+.laptop-dropdown-wrap {
+    display: none;
+}
+
+.laptop-dropdown-main .first,
+.second,
+.third,
+.fourth {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.laptop-dropdown-main .second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.laptop-dropdown-main {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.laptop-dropdown-main li {
+    list-style: none;
+}
+
+.laptop-dropdown-main li a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    display: block;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-size: .95rem;
+    font-weight: 500;
+    transition: all .2s;
+}
+
+.laptop-dropdown-main ul li a:hover {
+    color: #0068C8;
+}
+
+.laptop-dropdown-main .laptop-down {
+    display: flex;
+    justify-content: space-between;
+}
+
+.smart-home {
+    margin-bottom: 40px;
+}
+
+.tv2 {
+    margin-top: 12px;
+}
+
+/* SMARTPHONE TWO DROPDOWN */
+
+.smartphone-two {
+    position: relative;
+}
+
+.smartphone-dropdown {
+    display: flex;
+    position: absolute;
+    left: -550px;
+    top: 44px;
+    justify-content: space-between;
+    padding: 25px 50px;
+    cursor: auto;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    min-width: 1250px;
+    border: 2px solid rgb(234, 234, 234);
+}
+
+.smartphone-two .smartphone-dropdown-wrap {
+    display: none;
+}
+
+.smartphone-dropdown .left-side {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.smartphone-dropdown .left-side .cell {
+    margin-top: 35px;
+}
+
+.smartphone-dropdown .right-side {
+    display: flex;
+    justify-content: space-between;
+    width: 52%;
+    position: relative;
+    background-color: pink;
+    height: 260px;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 10px;
+    background-image: url(/images/banners/banner-50.jpg);
+}
+
+.smartphone-dropdown .left-side li {
+    list-style: none;
+    font-weight: 100;
+}
+
+.smartphone-dropdown .left-side li a {
+    font-weight: 100;
+}
+
+.smartphone-dropdown .right-side .apple {
+    position: absolute;
+    left: 50px;
+}
+
+.smartphone-dropdown .right-side .apple h1 {
+    font-family: sans-serif;
+    color: white;
+    padding-bottom: 12px;
+    font-size: 2.1rem;
+}
+
+.smartphone-dropdown .right-side .apple span {
+    color: rgb(176, 176, 176);
+}
+
+/* HEADPHONES DROPDOWN */
+.headphone-main {
+    position: relative;
+}
+
+.headphone-dropdown-wrap {
+    position: absolute;
+    top: 44px;
+    left: -705px;
+    background-color: white;
+    width: 100%;
+    min-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 50px;
+}
+
+.headphone-main .headphone-dropdown {
+    display: none;
+}
+
+.headphone-dropdown-wrap .up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headphone-dropdown-wrap li {
+    list-style: none;
+}
+
+.headphone-dropdown-wrap li a {
+    font-weight: 100;
+}
+
+.headphone-dropdown-wrap .down {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.headphone-dropdown-wrap .down .box {
+    width: 262px;
+    height: 140px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headphone-dropdown-wrap .computer-product {
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.7), rgba(0, 0, 0, 0.7)), url(/images/mega-cat-1.jpg);
+}
+
+.headphone-dropdown-wrap .cell-product {
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.7), rgba(0, 0, 0, 0.7)), url(/images/mega-cat-2.jpg);
+}
+
+.headphone-dropdown-wrap .audio-product {
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.7), rgba(0, 0, 0, 0.7)), url(/images/mega-cat-3.jpg);
+}
+
+.headphone-dropdown-wrap .video-product {
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.7), rgba(0, 0, 0, 0.7)), url(/images/mega-cat-4.jpg);
+}
+
+.headphone-dropdown-wrap .computer-product:hover {
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.8), rgba(0, 0, 0, 0.8)), url(/images/mega-cat-1.jpg);
+}
+
+.headphone-dropdown-wrap .cell-product:hover {
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.8), rgba(0, 0, 0, 0.8)), url(/images/mega-cat-2.jpg);
+}
+
+.headphone-dropdown-wrap .audio-product:hover {
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.8), rgba(0, 0, 0, 0.8)), url(/images/mega-cat-3.jpg);
+}
+
+.headphone-dropdown-wrap .video-product:hover {
+    background: linear-gradient(to bottom, rgba(17, 17, 17, 0.8), rgba(0, 0, 0, 0.8)), url(/images/mega-cat-4.jpg);
+}
+
+.headphone-dropdown-wrap .down .box h1 {
+    font-size: 1.2rem;
+    padding-bottom: 3px;
+    color: white;
+    margin-top: 20px;
+}
+
+.headphone-dropdown-wrap .down .box span {
+    color: rgb(177, 176, 176);
+    font-weight: 100;
+}
+
+
+
+
+
+/* Navbar Menu Media qureis */
+
+@media only screen and (max-width: 1200px) {
+    .menu-section {
+        padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 1110px) {
+
+    .shop-categories span,
+    .fa-angle-down {
+        display: none;
+    }
+
+    .deal span {
+        margin-left: 20px;
+    }
+
+    .navbar-menu li {
+        margin-right: 25px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .menu-section {
+        display: none;
+    }
+}
+
